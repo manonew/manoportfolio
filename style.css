@@ -150,7 +150,7 @@ section{
         
 }
 
-#vid:hover{
+iframe:hover{
     -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
@@ -172,7 +172,8 @@ section{
 
   .grid-item > h3{
       padding: 10px 0px;
-      background-color: rgb(4, 163, 102);
+      /* background-color: rgb(4, 163, 102); */
+      background-color: rgb(4, 133, 184);
       border-radius: 0px 90px 0px 90px;
       margin-bottom: 30px;
   }
@@ -327,6 +328,14 @@ a:hover{
 
 .grid-item > h3{
     padding: 30px 10px;
+}
+
+.grid-item > h3{
+    padding: 10px 0px;
+    /* background-color: rgb(4, 163, 102); */
+    background-color: rgb(4, 133, 184);
+    border-radius: 0px 50px 0px 50px;
+    margin-bottom: 30px;
 }
 
 .grid-item > div{
