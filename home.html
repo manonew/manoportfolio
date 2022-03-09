@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/dfedf79461.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+ 
+ 
+<!-- Navbar -->
+<nav>
+        <button id="btn">☰</button>
+      <div class="navbar">
+      
+          <ul id="nav_links">
+              <li><a href="#intro">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+             
+          </ul></div>     
+</nav>    
+    <!-- Intro -->
+<section id="intro">
+    <div class="intro_container">
+
+<!-- intro -->
+
+<div class="maincolumn">
+    <div class="intro">
+        <h3 id="hello">Hello!</h3>
+<p>I am Manonmani</p><br>
+<p class="subtext">Web Designer | UI/UX Design</p><br>
+<p class="subtext">Interested in Web Development</p> 
+<button id="proj" onclick="window.location.href='#projects'">My Projects</button>
+
+<br><br><br>
+<div class="email">Email : mano2shan@gmail.com</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+</section>
+
+
+<!-- Projects -->
+ <section id="projects">
+<div class="projects">
+<h2 id="proj_head">PROJECTS</h2>
+<div class="projects_container">
+    <div class="grid-item"><h3>App Development Company Website (Flexbox & Grid Layout)</h3>
+        <video id="vid" width="420" height="240" controls>
+            <source src="MobCo.mp4" type="video/mp4">
+           
+            Your browser does not support the video tag.
+          </video>
+          <div>This Website is created using HTML, CSS and Javascript. CSS Flexbox and Grid Layouts features are used </div>
+</div>
+
+        <div class="grid-item">
+                    <h3>Country Information (API)</h3>            
+    
+              <video class="framed" id="vid" width="420" height="240" controls>
+                <source src="Country Info.mp4" type="video/mp4">
+                
+                Your browser does not support the video tag.
+              </video>
+              <div>RESTFUL API is used in this Webpage, Data is imported using REST Country API in JSON format. <br> Technology Used: HTML, CSS, Javascript</div>
+                
+          </div>
+
+          <div class="grid-item"><h3>Kids School Website (Bootstrap)</h3>
+          
+              <video id="vid" width="420" height="240" controls>
+                <source src="KidZ School.mp4" type="video/mp4">
+               
+                Your browser does not support the video tag.
+              </video>
+              <div>This website is created Using Bootstrap. Cards, Carousal features are used</div>
+             
+           </div>
+           <div class="grid-item"><h3>Author Website (Responsive Website Design)</h3>
+                     
+            <video id="vid" width="420" height="240" controls>
+              <source src="Bookpod project.mp4" type="video/mp4">
+            
+              Your browser does not support the video tag.
+            </video>
+
+            <div>In this website Responsive Web Design is used. Mobile View is also designed. Created using HTML, CSS, Javascript</div>
+         </div>
+   
+
+</div>
+</div>
+
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<div class="skills">
+    <h2 id="skill_head">SKILLS</h2>
+
+    <table>
+<tr>
+  <td> <label for="file">HTML</label></td>
+  <td> <progress id="file" value="92" max="100">  <div class="progress-bar">
+    <span style="width: 80%;height: 100px;">Progress: 92%</span>
+</div> </progress><br></td>
+  <td>92%</td>
+</tr>
+<tr>
+  <td><label for="file">CSS</label></td>
+  <td>  <progress id="file" value="85" max="100"> 85% </progress><br></td>
+  <td>85%</td>
+</tr>
+<tr>
+  <td> <label for="file">Javascript</label></td>
+  <td> <progress id="file" value="70" max="100"> 70% </progress><br></td>
+  <td>70%</td>
+</tr>
+<tr>
+  <td>  <label for="file">Bootstrap</label></td>
+  <td> <progress id="file" value="65" max="100"> 65% </progress><br></td>
+  <td>65%</td>
+</tr>
+<tr>
+  <td><label for="file">jQuery</label></td>
+  <td> <progress id="file" value="60" max="100"> 60% </progress><br></td>
+  <td>60%</td>
+</tr>
+<tr>
+  <td><label for="file">MySQL</label></td>
+  <td>  
+    <progress id="file" value="50" max="100"> 50% </progress><br></td>
+  <td>50%</td>
+</tr>
+<tr>
+  <td><label for="file">Express JS</label></td>
+  <td> <progress id="file" value="40" max="100"> 40% </progress><br></td>
+  <td>40%</td>
+</tr>
+
+<tr>
+  <td><label for="file">React JS</label></td>
+  <td>  
+    <progress id="file" value="30" max="100"> 30% </progress><br></td>
+  <td>30%</td>
+</tr>
+<tr>
+  <td><label for="file">Angular</label></td>
+  <td>  
+    <progress id="file" value="20" max="100"> 20% </progress><br></td>
+  <td>20%</td>
+</tr>
+    </table>
+   
+   
+</div>
+</section>
+<div id="top" onclick="scrolltop()"><i class="fas fa-chevron-up"></i></div>
+</body>
+
+<script> 
+
+const mybtn =  document.getElementById("top");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybtn.style.display = "block";
+  } else {
+    mybtn.style.display = "none";
+  }
+}
+
+
+$("#btn").mouseover(function() {
+    $("#nav_links").toggleClass("active");
+});
+
+function scrolltop(){
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+$(document).ready(function(){
+ 
+    $("#plant").animate({
+    width: '300px',
+   height: '300px'   
+    },3000).delay( 5000 );
+     $(".intro").hide();
+    $(".intro").slideDown(3000);
+  
+});
+
+const toggle=document.getElementById("toggle");
+
+toggle.addEventListener('change', (e) =>{
+    document.body.classList.toggle("dark");
+})
+
+const htmlEl = document.getElementsByTagName('html')[0];
+
+function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+  </script>
+</html>
