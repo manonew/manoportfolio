@@ -297,7 +297,7 @@ i{
     flex-direction: column;
     width: 80%;
     padding: 15px 5px;
-    background-color: rgb(243, 255, 227);
+    background-color: rgb(229, 227, 255);
     transform: translateX(0%) translateY(0%);
     border-radius: 3px;
     box-shadow: 5px 5px 20px rgb(10, 10, 10);
@@ -334,11 +334,12 @@ a:hover{
     grid-template-columns: auto;
     column-gap: 10px;
     margin: 0px;
+     line-height: 1.2em;
     
 }
 .grid-item{
     padding: 0px 0px;
-    size: 50vw;
+    font-size: 0.8em;
 }
 
 .grid-item > h3{
@@ -354,7 +355,7 @@ a:hover{
 }
 
 .grid-item > div{
-  padding: 20px 10px;
+  padding: 1em 1em;
   font-family: 'Roboto', sans-serif;
   border-top: 1px solid gray;
 }
@@ -450,7 +451,7 @@ table{
     flex-direction: column;
     width: 80%;
     padding: 15px 5px;
-    background-color: rgb(243, 255, 227);
+    background-color: rgb(229, 227, 255);
     transform: translateX(0%) translateY(0%);
     border-radius: 3px;
     box-shadow: 5px 5px 20px rgb(10, 10, 10);
@@ -487,11 +488,12 @@ a:hover{
     grid-template-columns: auto;
     column-gap: 10px;
     margin: 0px;
+    line-height: 1.2em;
     
 }
 .grid-item{
     padding: 0px 0px;
-    size: 50vw;
+    font-size: 0.8em;
 }
 
 .grid-item > h3{
@@ -507,7 +509,7 @@ a:hover{
 }
 
 .grid-item > div{
-  padding: 20px 10px;
+  padding: 1em 1em;
   font-family: 'Roboto', sans-serif;
   border-top: 1px solid gray;
 }
