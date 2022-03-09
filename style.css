@@ -9,7 +9,6 @@
 /*Navbar*/
 .navbar{
     height: 60px;
-    /* background-color: crimson; */
     color: rgb(121, 126, 124);
     font-family: Montserrat;
     
@@ -72,8 +71,6 @@ ul li a:hover{
 .intro_container{
      width: 100%;
     height: auto;
-    /* background-color: crimson;
-    box-shadow: 5px 5px 20px #5c5b5a; */
     margin: 10px 0px;
     padding-top: 10px;   
 }
@@ -108,7 +105,7 @@ section{
    
 }
 .projects_container{
-    padding: 50px 40px;
+    padding: 0px 40px;
     line-height: 20pt;
     display: grid;
     column-gap: 50px;
@@ -133,35 +130,40 @@ section{
 #proj{
     border-color: black;
     /* border-radius: 10px; */
-    background:none;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 10px 20px;
     margin-top: 30px;
     font-size: 20px;
+    box-shadow: 5px 5px 20px gray;
 }
 #proj:hover{
-    background-color: beige;
+    background-color: white;
     color: black;
-    box-shadow: 5px 5px 15px rgb(68, 67, 67);
+    box-shadow: 5px 5px 25px rgb(68, 67, 67);
 }
 #vid{
     border: rgb(172, 171, 171) 1px solid; 
     transition: transform .6s;
         
 }
+iframe{
+    margin: 20px 0px;
+}
 
 iframe:hover{
     -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
+  
 }
 
   .grid-item {
     /* background-color: white; #FBE5E5 */
-    padding: 20px;
+    padding: 0px;
     font-size: 15px;
     text-align: center;
-    border: rgb(172, 171, 171) 2px solid; 
+    border: rgb(172, 171, 171) 1px solid; 
     border-radius: 15px;
 
  
@@ -174,13 +176,14 @@ iframe:hover{
       padding: 10px 0px;
       /* background-color: rgb(4, 163, 102); */
       background-color: rgb(4, 133, 184);
-      border-radius: 0px 90px 0px 90px;
-      margin-bottom: 30px;
+      border-radius: 15px 15px 0px 0px;
+      
   }
   
   .grid-item > div{
-    padding: 20px 0px;
+    padding: 20px 10px;
     font-family: 'Roboto', sans-serif;
+    border-top: 1px solid gray;
 }
 
     
@@ -231,9 +234,11 @@ i{
     padding: 10px 0px;
     color: rgb(19, 18, 18);
 }
-/* Mobile view */
+/* Tablet view */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width:600px) {
+    *{box-sizing: border-box;}
+
     /* Introduction */
     .maincolumn {
       display: flex;
@@ -246,6 +251,7 @@ i{
         text-align: left;
         margin-left: 35px;
         margin-top: 40px;
+        font-size: 25px;
         
     }
 
@@ -277,6 +283,10 @@ i{
     margin-bottom: 20px;
     padding-top: 30px;
 }
+.subtext{
+    font-size: 0.7em;
+}
+
 /* Navbar */
 #nav_links{
     display: none;
@@ -319,28 +329,34 @@ a:hover{
    
 }
 .projects_container{
+    padding: 50px 10px;
     display: grid;
     grid-template-columns: auto;
+    column-gap: 10px;
+    margin: 0px;
+    
 }
 .grid-item{
-    padding: 20px 0px;
+    padding: 0px 0px;
+    size: 50vw;
 }
 
 .grid-item > h3{
-    padding: 30px 10px;
+    padding: 0px 10px;
 }
 
 .grid-item > h3{
     padding: 10px 0px;
     /* background-color: rgb(4, 163, 102); */
     background-color: rgb(4, 133, 184);
-    border-radius: 0px 50px 0px 50px;
-    margin-bottom: 30px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1em;
 }
 
 .grid-item > div{
   padding: 20px 10px;
   font-family: 'Roboto', sans-serif;
+  border-top: 1px solid gray;
 }
 
 #proj_head{
@@ -349,7 +365,10 @@ a:hover{
     margin: 20px 30px;
     letter-spacing: 2px;
 }
-
+iframe{
+    width: 320px;
+    height: 240px;
+}
 /* Skills section */
 .skills{
     padding: 10px 10px 50px 10px;
@@ -361,6 +380,162 @@ a:hover{
     letter-spacing: 2px;
 }
 td{
-    padding: 5px 30px;
+    padding: 5px 10px;
+}
+table{
+    font-size: 1em;
+}
+  }
+
+  /* Mobile view */
+
+  @media only screen and (max-width:480px) {
+    *{box-sizing: border-box;}
+
+    /* Introduction */
+    .maincolumn {
+      display: flex;
+      flex-direction: column;
+    }
+   
+    .intro{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        margin-left: 35px;
+        margin-top: 40px;
+        font-size: 25px;
+        
+    }
+
+    #intro{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        /* min-height: 100vh; */
+        background: url(123.jpg);
+        background-size: 100vw 80vh;        
+        background-repeat: no-repeat;
+    }
+    #intro::after{
+        content: "";
+  clear: both;
+    }
+    
+.intro_container{
+    height: auto;
+    padding-top: 0px;
+    margin-top: 20px;
+}
+
+#btn{
+    display: block;
+    padding-left: 10px;
+}
+.email{
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.subtext{
+    font-size: 0.5em;
+}
+
+/* Navbar */
+#nav_links{
+    display: none;
+    
+}
+#nav_links.active{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 15px 5px;
+    background-color: rgb(243, 255, 227);
+    transform: translateX(0%) translateY(0%);
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px rgb(10, 10, 10);
+}
+.navbar{
+    padding: 5px 5px;
+}
+ul{
+    gap: 25px;
+    height: 150px;
+    
+}
+ul li a{
+    color: black;
+}
+ul li:hover a{
+    color: rgb(180, 52, 2);
+}
+a:hover{
+   
+    display: block;
+}
+
+
+/* Projects section */
+.projects{
+     margin-top: 0px; 
+ 
+   
+}
+.projects_container{
+    padding: 3.5% 2.7%;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 10px;
+    margin: 0px;
+    
+}
+.grid-item{
+    padding: 0px 0px;
+    size: 50vw;
+}
+
+.grid-item > h3{
+    padding: 0px 10px;
+}
+
+.grid-item > h3{
+    padding: 10px 0px;
+    /* background-color: rgb(4, 163, 102); */
+    background-color: rgb(4, 133, 184);
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1em;
+}
+
+.grid-item > div{
+  padding: 20px 10px;
+  font-family: 'Roboto', sans-serif;
+  border-top: 1px solid gray;
+}
+
+#proj_head{
+    display: block;
+    border-radius: 100px 0px 100px 0px;
+    margin: 20px 30px;
+    letter-spacing: 2px;
+}
+iframe{
+    width: 320px;
+    height: 240px;
+}
+/* Skills section */
+.skills{
+    padding: 10px 10px 50px 10px;
+}
+#skill_head{
+    display: block;
+    border-radius: 100px 0px 100px 0px;
+    margin: 20px 30px;
+    letter-spacing: 2px;
+}
+td{
+    padding: 1em 0.5em;
+}
+table{
+    font-size: 1em;
 }
   }
